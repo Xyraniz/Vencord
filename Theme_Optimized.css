@@ -1,151 +1,220 @@
-/* Fondo principal de la aplicación */
+/* === FONDO PRINCIPAL DE LA APLICACIÓN === */
 .appMount__51fd7 { 
-  background: 0 0; 
-  background-image: var(--theme-background-image); 
-  background-size: cover 
+  background: 0 0 !important; 
+  background-image: var(--theme-background-image) !important; 
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
 }
 
-/* Icono personalizado de amigos */
+/* Fondo de transparencia general */
+.bg__960e4 { 
+  background: var(--theme-transparency) !important; 
+}
+
+/* Eliminar fondos predeterminados */
+.app__160d8,
+.theme-dark,
+.theme-light,
+.layer__960e4,
+.standardSidebarView__23e6b,
+.sidebarRegionScroller__23e6b,
+.contentRegion__23e6b,
+.contentRegionScroller__23e6b,
+.chat_f75fb0,
+.chatContent_f75fb0,
+.container__2637a,
+.container__7d20c,
+.membersWrap_c8ffbb,
+.nowPlayingColumn__133bf,
+.tabBody__133bf,
+.container__133bf,
+.scroller__53543,
+.wrapper_fc8177,
+.wrapper_d852db,
+.member_c8ffbb,
+.root_bfe55a,
+.wrapper_cb9592,
+.callContainer_cb9592,
+.resizeHandle__01ae2,
+.chatLayerWrapper__01ae2,
+.channelChatWrapper_cb9592,
+.container_f369db,
+.themedBackground__74017,
+.privateChannels_e6b769,
+.chatGradient__36d07,
+.chatTypingGradientAtBottom__36d07,
+.chatTypingGradientNotAtBottom__36d07,
+.titleContainer_e29cd7,
+.header_c6bf1b,
+.themed__9293f {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* === ICONO PERSONALIZADO DE AMIGOS === */
 .listItemWrapper__91816 .wrapper_cc5dd2 .wrapper__6e9f8 .childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 {
-  background-image: var(--home-icon-image);
-  background-size: var(--home-icon-image-zoom);
-  background-position: var(--home-icon-image-position);
-  background-repeat: no-repeat
+  background-image: var(--home-icon-image) !important;
+  background-size: var(--home-icon-image-zoom) !important;
+  background-position: var(--home-icon-image-position) !important;
+  background-repeat: no-repeat !important;
+  background-color: transparent !important;
 }
 
 .wrapper__6e9f8 .childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 svg { 
-  display: none 
+  display: none !important;
 }
 
-/* Transparencias y desenfoques generales */
-.bg__960e4 { 
-  background: var(--theme-transparency); 
+.tutorialContainer__1f388 .wrapper_cc5dd2 .wrapper__6e9f8 .childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 {
+  background-color: transparent !important;
 }
 
+/* === TRANSPARENCIAS Y DESENFOQUES === */
 .panels__5e434 { 
-  background: var(--message-box-transparency); 
-  backdrop-filter: blur(5px) 
+  background: var(--message-box-transparency) !important; 
+  backdrop-filter: blur(5px) !important;
 }
 
 .channelTextArea_f75fb0 { 
-  background: var(--message-box-transparency) 
+  background: var(--message-box-transparency) !important;
+  backdrop-filter: blur(5px) !important;
 }
 
 .searchBar__5ec2f {
-  background-color: initial;
-  backdrop-filter: blur(5px)
+  background-color: transparent !important;
+  backdrop-filter: blur(5px) !important;
 }
 
 .itemCard__7e549.wrapper__00943.outer_bf1984.padded_bf1984.interactive_bf1984 {
-  background-color: initial;
-  backdrop-filter: blur(5px)
+  background-color: transparent !important;
+  backdrop-filter: blur(5px) !important;
 }
 
 .embedFull__623de {
   background-color: var(--embed-background-transparency) !important;
-  backdrop-filter: blur(5px)
+  backdrop-filter: blur(5px) !important;
 }
 
 .footer__4d95d {
-  background: var(--embed-background-transparency);
-  backdrop-filter: blur(5px)
+  background: var(--embed-background-transparency) !important;
+  backdrop-filter: blur(5px) !important;
 }
 
 .textContainer__4d95d {
-  background-color: var(--embed-background-transparency);
-  backdrop-filter: blur(15px) !important
+  background-color: var(--embed-background-transparency) !important;
+  backdrop-filter: blur(15px) !important;
 }
 
 .container__0f2e8 {
   background-color: var(--context-menu-transparency) !important;
-  backdrop-filter: blur(5px)
+  backdrop-filter: blur(5px) !important;
 }
 
 .container__01ae2 {
-  background: var(--theme-transparency);
-  backdrop-filter: blur(5px)
+  background: var(--theme-transparency) !important;
+  backdrop-filter: blur(5px) !important;
 }
 
 .mainCard_f369db {
-  background: var(--theme-transparency);
-  backdrop-filter: blur(5px)
+  background: var(--theme-transparency) !important;
+  backdrop-filter: blur(5px) !important;
 }
 
 .container_faa96b:hover {
-  background: var(--theme-transparency);
-  backdrop-filter: blur(15px)
+  background: var(--theme-transparency) !important;
+  backdrop-filter: blur(15px) !important;
 }
 
 /* Transparencias para popouts de usuario */
-.smallPopout__3206b {
-  background-image: var(--theme-background-image);
-  background-color: var(--small-user-popout-background-transparency);
-  background-position: center;
-}
-
-.bigPopout__3206b {
-  background-image: var(--theme-background-image);
-  background-color: var(--big-user-popout-background-transparency);
-  background-position: center;
+[class*="userPopout"] {
+  background-image: var(--theme-background-image) !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  background-position: center !important;
+  background-size: cover !important;
+  backdrop-filter: blur(5px) !important;
 }
 
 /* Transparencias para código y menús */
-.codeView__4d95d { 
-  background-color: var(--code-markup-background-color) 
+.codeView__4d95d,
+.codeMarkup__623de,
+.markup__623de pre {
+  background-color: var(--code-markup-background-color) !important;
+  backdrop-filter: blur(5px) !important;
 }
 
-.emojiPicker__3206b {
-  background-color: var(--emoji-menu-background-color);
+/* Menús de emojis y búsqueda */
+.emojiPicker__3206b,
+.emojiPickerContainer__3206b {
+  background-color: var(--emoji-menu-background-color) !important;
+  backdrop-filter: blur(5px) !important;
 }
 
-.messageSearch__3206b {
-  background-color: var(--message-search-menu-background-color);
-}
-
-.messageSearchResults__3206b {
-  background-color: var(--message-search-container-background-color);
+.messageSearch__3206b,
+.searchResultsWrap__3206b {
+  background-color: var(--message-search-menu-background-color) !important;
+  backdrop-filter: blur(5px) !important;
 }
 
 /* Iconos de añadir servidor/descubrir */
-.addServer__3206b, .discover__3206b {
-  background-color: var(--add-discover-icon-transparency);
+.circleIconButton__3206b[aria-label="Añadir un servidor"],
+.circleIconButton__3206b[aria-label="Explorar servidores públicos"] {
+  background-color: var(--add-discover-icon-transparency) !important;
 }
 
-/* Asegurar que los temas oscuro/claro sean transparentes */
-.theme-dark, .theme-light {
+/* === ELIMINAR ANIMACIONES RAINBOW === */
+/* Se eliminan todas las animaciones rainbow */
+@keyframes rainbow {
+  /* Vacío - animación eliminada */
+}
+
+.pill_e5445c .item__58105 {
+  animation: none !important;
+  border-color: transparent !important;
+}
+
+/* Asegurar que no haya animaciones en servidores no leídos */
+.item__58105:not([style*="height: 8px"]) {
+  border-color: transparent !important;
+  background-color: transparent !important;
+  animation: none !important;
+}
+
+/* === CLASES ESPECÍFICAS DEL TEMA ORIGINAL PARA FONDO === */
+/* Estas clases son necesarias para que el fondo funcione */
+.wrapper_ef3116,
+.container_c8ffbb,
+.members_c8ffbb,
+.privateChannels__35e86,
+.scroller__99e7c,
+.panel__5dec7,
+.scroller__28a87 {
   background: transparent !important;
 }
 
-/* Eliminar animaciones rainbow y otros efectos */
-@keyframes rainbow {
-  /* Eliminado */
+.sidebar__5e434:after,
+.sidebar_c48ade:after,
+.children__9293f:after {
+  background: transparent !important;
 }
 
-.pill_e5445c .item__58105:not([style*="height: 8px"]) {
-  border-color: transparent;
-  background-color: initial;
+/* Asegurar que los scrollbars sean transparentes */
+.scrollerBase_d125d2,
+.scrollerWrap_d125d2,
+.scrollerContent_d125d2 {
+  background: transparent !important;
 }
 
-/* Mantener estructura básica pero sin animaciones */
-.pill_e5445c { 
-  width: 100% !important 
+/* === CLASES DE DISCORD MODERNO === */
+/* Estas clases pueden variar con actualizaciones de Discord */
+[class*="app"] {
+  background: transparent !important;
 }
 
-.wrapper__58105 { 
-  overflow: visible !important 
+[class*="background"] {
+  background: transparent !important;
 }
 
-.item__58105 {
-  animation: none;
-  border: 2px solid transparent;
-  background: 0 0;
-  display: block;
-  border-radius: 30% !important;
-  position: absolute;
-  transform: none !important;
-  inset: 0 !important;
-  top: -2px !important;
-  left: 2px !important;
-  width: 100%;
-  height: 100% !important
+/* Fuerza el fondo en todos los elementos principales */
+body, #app-mount, .app__160d8 {
+  background: transparent !important;
 }
