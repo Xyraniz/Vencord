@@ -1,24 +1,125 @@
-/* FONDO DE DISCORD - FONDO COMPLETO */
+/* FONDO COMPLETO DE DISCORD */
 .appMount__51fd7 {
     background: var(--theme-background-image) center/cover fixed !important;
 }
 
-/* CONTENEDORES PRINCIPALES TRANSPARENTES */
+/* HACER TODOS LOS CONTENEDORES TRANSPARENTES PARA VER EL FONDO */
 .app__160d8,
-.standardSidebarView__23e6b,
-.chat_f75fb0,
-.container__2637a {
-    background: transparent !important;
-}
-
-/* PANELES CON OPACIDAD PARA LEGIBILIDAD */
 .bg__960e4,
+.chat_f75fb0,
+.container__2637a,
 .panels__5e434,
 .sidebar_c48ade,
 .theme-dark .container__2637a,
-.chatContent_f75fb0 {
-    background: rgba(0, 0, 0, 0.7) !important;
-    backdrop-filter: blur(5px);
+.standardSidebarView__23e6b,
+.layer__960e4,
+.chatContent_f75fb0,
+.members_c8ffbb,
+.privateChannels__35e86,
+.container_c8ffbb,
+.scroller__99e7c,
+.sidebarRegionScroller__23e6b,
+.contentRegionScroller__23e6b,
+.contentRegion__23e6b,
+.sidebar__5e434,
+.chat__5e434,
+.content__5e434,
+.container__5e434,
+.scrollerBase__99e7c,
+.scrollerWrap__99e7c,
+.scrollerContent__99e7c,
+.track__99e7c,
+.thumb__99e7c,
+.channelTextArea_f75fb0,
+.form_f75fb0,
+.wrapper_f75fb0,
+.innerWrapper_f75fb0,
+.typing_f75fb0,
+.attachments_f75fb0,
+.messagesWrapper_f75fb0,
+.messageGroupWrapper_f75fb0,
+.cozy_f75fb0,
+.compact_f75fb0,
+.header_f75fb0,
+.contents_f75fb0,
+.markup_f75fb0,
+.container_f75fb0,
+.replying_f75fb0,
+.mentioned_f75fb0,
+.isUnread_f75fb0,
+.isSelected_f75fb0,
+.wrapper_f75fb0,
+.slide_f75fb0,
+.pageWrapper_f75fb0,
+.container_f75fb0,
+.sidebar_f75fb0,
+.content_f75fb0,
+.header_f75fb0,
+.container_f75fb0,
+.footer_f75fb0,
+.actions_f75fb0,
+.reactions_f75fb0,
+.embedWrapper_f75fb0,
+.embed_f75fb0,
+.embedContent_f75fb0,
+.embedTitle_f75fb0,
+.embedDescription_f75fb0,
+.embedFields_f75fb0,
+.embedField_f75fb0,
+.embedAuthor_f75fb0,
+.embedFooter_f75fb0,
+.attachment_f75fb0,
+.audioAttachment_f75fb0,
+.videoAttachment_f75fb0,
+.imageAttachment_f75fb0,
+.container_f75fb0,
+.wrapper_f75fb0,
+.inner_f75fb0,
+.avatar_f75fb0,
+.username_f75fb0,
+.timestamp_f75fb0,
+.buttons_f75fb0,
+.button_f75fb0,
+.icon_f75fb0,
+.label_f75fb0,
+.container_f75fb0,
+.wrapper_f75fb0,
+.input_f75fb0,
+.placeholder_f75fb0,
+.container_f75fb0,
+.wrapper_f75fb0,
+.label_f75fb0,
+.description_f75fb0,
+.container_f75fb0,
+.wrapper_f75fb0,
+.header_f75fb0,
+.content_f75fb0,
+.container_f75fb0,
+.wrapper_f75fb0,
+.list_f75fb0,
+.item_f75fb0,
+.container_f75fb0,
+.wrapper_f75fb0,
+.header_f75fb0,
+.content_f75fb0,
+.footer_f75fb0,
+.container_f75fb0,
+.wrapper_f75fb0,
+.header_f75fb0,
+.content_f75fb0,
+.container_f75fb0,
+.wrapper_f75fb0,
+.list_f75fb0,
+.item_f75fb0,
+.container_f75fb0,
+.wrapper_f75fb0,
+.header_f75fb0,
+.content_f75fb0,
+.container_f75fb0,
+.wrapper_f75fb0,
+.list_f75fb0,
+.item_f75fb0 {
+    background: transparent !important;
 }
 
 /* ICONO PERSONALIZADO */
@@ -29,21 +130,4 @@
 /* OCULTAR EL SVG ORIGINAL DEL ICONO */
 .childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 svg {
     display: none !important;
-}
-
-/* ELEMENTOS DE TEXTO PARA MEJOR LEGIBILIDAD */
-.markup_a7e664,
-.messageContent_a7e664,
-.username_a7e664,
-.name_a7e664,
-.content_a7e664,
-.headerText_a7e664 {
-    color: #ffffff !important;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-}
-
-/* SCROLLBAR TRANSPARENTE */
-.scroller_e2e187,
-.scrollerBase_e2e187 {
-    background: transparent !important;
 }
