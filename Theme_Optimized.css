@@ -1,152 +1,49 @@
-/* ======================================================================
-   DISCORD THEME OPTIMIZADO - ARCHIVO CSS PRINCIPAL
-   ======================================================================
-   Este archivo contiene todas las reglas CSS que aplican los estilos.
-   Debe subirse a GitHub y ser accesible públicamente.
-   ====================================================================== */
-
-/* ========== 1. FONDO PRINCIPAL DE DISCORD ========== */
-/*
- * Aplica la imagen de fondo a toda la ventana de Discord
- * 'fixed' = Fondo fijo (efecto parallax)
- * 'center/cover' = Centrado y cubre toda el área
- */
+/* FONDO DE DISCORD - FONDO COMPLETO */
 .appMount__51fd7 {
     background: var(--theme-background-image) center/cover fixed !important;
 }
 
-/* ========== 2. ELEMENTOS TRANSPARENTES ========== */
-/*
- * Estas clases hacen transparentes TODOS los elementos de Discord
- * que normalmente tienen fondos oscuros y tapan la imagen de fondo.
- * 
- * IMPORTANTE: Si Discord actualiza sus clases, es posible que
- * algunas áreas vuelvan a tener fondo oscuro. En ese caso,
- * necesitarás agregar nuevas clases aquí.
- */
+/* CONTENEDORES PRINCIPALES TRANSPARENTES */
 .app__160d8,
-.bg__960e4,
-.wrapper_ef3116,
-.panels__5e434,
-.sidebar_c48ade:after,
-.container__2637a,
-.chat_f75fb0,
-.chatContent_f75fb0,
-.themed__9293f,
-.container_c8ffbb,
-.members_c8ffbb,
-.channelTextArea_f75fb0,
-.themedBackground__74017,
-.privateChannels__35e86,
-.scroller__99e7c,
-.children__9293f:after,
-.tabBody__133bf,
-.container__133bf,
-.member_c8ffbb,
-.nowPlayingColumn__133bf,
-.container__7d20c,
-.wrapper_d852db,
-.wrapper_fc8177,
 .standardSidebarView__23e6b,
-.sidebarRegionScroller__23e6b,
-.layer__960e4,
-.contentRegion__23e6b,
-.contentRegionScroller__23e6b,
-.channelAttachmentArea_b77158,
-.upload_aa605f,
-.searchBar__5ec2f,
-.itemCard__7e549,
-.embedFull__623de,
-.footer__4d95d,
-.textContainer__4d95d,
-.codeView__4d95d,
-.container__0f2e8,
-.panel__5dec7,
-.scroller__28a87,
-.root_bfe55a,
-.wrapper_cb9592,
-.callContainer_cb9592,
-.resizeHandle__01ae2,
-.container__01ae2,
-.chatLayerWrapper__01ae2,
-.channelChatWrapper_cb9592,
-.container_f369db,
-.mainCard_f369db,
-.membersWrap_c8ffbb,
-.privateChannels_e6b769,
-.chatGradient__36d07,
-.chatTypingGradientAtBottom__36d07,
-.chatTypingGradientNotAtBottom__36d07,
-.sidebar__5e434:after,
-.titleContainer_e29cd7,
-.header_c6bf1b,
-.scroller__53543 {
+.chat_f75fb0,
+.container__2637a {
     background: transparent !important;
 }
 
-/* ========== 3. ELIMINAR SEPARADOR DE SERVIDORES ========== */
-/*
- * Elimina la línea gris que separa los servidores en la lista
- * Esto hace que la lista se vea más limpia con fondos personalizados
- */
-.guildSeparator__252b6 {
-    display: none !important;
+/* PANELES CON OPACIDAD PARA LEGIBILIDAD */
+.bg__960e4,
+.panels__5e434,
+.sidebar_c48ade,
+.theme-dark .container__2637a,
+.chatContent_f75fb0 {
+    background: rgba(0, 0, 0, 0.7) !important;
+    backdrop-filter: blur(5px);
 }
 
-/* ========== 4. ICONO PERSONALIZADO ========== */
-/*
- * Aplica la imagen personalizada al icono de "Amigos" de Discord
- * Usa las variables definidas en el archivo de configuración
- */
+/* ICONO PERSONALIZADO */
 .listItemWrapper__91816 .childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 {
     background: var(--home-icon-image) var(--home-icon-image-position) / var(--home-icon-image-zoom) no-repeat !important;
 }
 
-/* ========== 5. OCULTAR ICONO ORIGINAL ========== */
-/*
- * Oculta el icono SVG original de Discord
- * Sin esto, verías el icono original encima de tu imagen personalizada
- */
+/* OCULTAR EL SVG ORIGINAL DEL ICONO */
 .childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 svg {
     display: none !important;
 }
 
-/* ========== 6. MEJORA DE RENDIMIENTO ========== */
-/*
- * SECCIÓN OPCIONAL - Solo descomentar si hay problemas de rendimiento
- * Esto desactiva todas las animaciones, transiciones y efectos blur
- * Mejora FPS en PC muy viejos pero puede afectar la experiencia visual
- * 
- * PARA ACTIVAR: Elimina los caracteres /* al principio y *\/ al final
- */
-/*
-* {
-    animation: none !important;
-    transition: none !important;
-    backdrop-filter: none !important;
+/* ELEMENTOS DE TEXTO PARA MEJOR LEGIBILIDAD */
+.markup_a7e664,
+.messageContent_a7e664,
+.username_a7e664,
+.name_a7e664,
+.content_a7e664,
+.headerText_a7e664 {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
-*/
 
-/* ======================================================================
-   TROUBLESHOOTING (SOLUCIÓN DE PROBLEMAS):
-   
-   PROBLEMA: El fondo no se ve en algunas áreas
-   SOLUCIÓN: 1. Abre Discord con Ctrl+Shift+I (Inspeccionar elemento)
-              2. Identifica la clase CSS del área con fondo oscuro
-              3. Agrega esa clase a la lista de elementos transparentes
-   
-   PROBLEMA: El icono no cambia o se ve duplicado
-   SOLUCIÓN: 1. Verifica que la URL del icono sea accesible
-              2. Ajusta --home-icon-image-zoom a 80% o 120%
-              3. Prueba con una imagen en formato PNG con fondo transparente
-   
-   PROBLEMA: Discord se vuelve lento
-   SOLUCIÓN: 1. Descomenta la sección "MEJORA DE RENDIMIENTO" arriba
-              2. Usa imágenes más pequeñas (máx. 1920x1080px)
-              3. Usa formato WebP en lugar de PNG/JPG
-   
-   PROBLEMA: Las actualizaciones rompen el tema
-   SOLUCIÓN: 1. Discord cambia clases CSS frecuentemente
-              2. Monitorea actualizaciones en el repo de GitHub
-              3. Reporta problemas para obtener nuevas clases
-   ====================================================================== */
+/* SCROLLBAR TRANSPARENTE */
+.scroller_e2e187,
+.scrollerBase_e2e187 {
+    background: transparent !important;
+}
