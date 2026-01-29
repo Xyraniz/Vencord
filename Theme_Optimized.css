@@ -40,9 +40,14 @@
 .pill_e5445c { width: 100% !important }
 .wrapper__58105 { overflow: visible !important }
 
+/* Eliminado el círculo verde */
+.pill_e5445c .item__58105 {
+    display: none !important;
+}
+
 .item__58105 {
     animation: none;
-    border: 2px solid var(--main-theme-color);
+    border: 2px solid transparent;
     background: 0 0;
     display: block;
     border-radius: 30% !important;
