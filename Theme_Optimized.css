@@ -1,149 +1,151 @@
-/* FONDO COMPLETO DE DISCORD */
-.appMount__51fd7 {
-    background: var(--theme-background-image) center/cover fixed !important;
+/* Fondo principal de la aplicación */
+.appMount__51fd7 { 
+  background: 0 0; 
+  background-image: var(--theme-background-image); 
+  background-size: cover 
 }
 
-/* TRANSPARENTAR TODOS LOS ELEMENTOS - FONDO COMPLETAMENTE VISIBLE */
-.app__160d8,
-.bg__960e4, 
-.chat_f75fb0,
-.container__2637a,
-.panels__5e434,
-.sidebar_c48ade,
-.standardSidebarView__23e6b,
-.theme-dark .container__2637a,
-.layer__960e4,
-.contentRegion__23e6b,
-.sidebarRegionScroller__23e6b,
-.contentRegionScroller__23e6b,
-.container_c8ffbb,
-.members_c8ffbb,
-.privateChannels__35e86,
-.scroller__99e7c,
-.channelTextArea_f75fb0,
-.themedBackground__74017,
-.children__9293f:after,
-.guildSeparator__252b6,
-.sidebar__5e434:after,
-.chatGradient__36d07,
-.chatTypingGradientAtBottom__36d07,
-.chatTypingGradientNotAtBottom__36d07,
-.chatContent_f75fb0,
-.tabBody__133bf,
-.container__133bf,
-.nowPlayingColumn__133bf,
-.member_c8ffbb,
-.container__7d20c,
-.wrapper_d852db,
-.wrapper_fc8177,
-.themed__9293f,
-.searchBar__5ec2f,
-.footer__4d95d,
-.textContainer__4d95d,
-.codeView__4d95d,
-.container__0f2e8,
-.panel__5dec7,
-.scroller__28a87,
-.root_bfe55a,
-.wrapper_cb9592,
-.callContainer_cb9592,
-.resizeHandle__01ae2,
-.container__01ae2,
-.chatLayerWrapper__01ae2,
-.channelChatWrapper_cb9592,
-.container_f369db,
-.mainCard_f369db,
-.membersWrap_c8ffbb,
-.privateChannels_e6b769,
-.titleContainer_e29cd7,
-.header_c6bf1b,
-.scroller__53543,
-
-/* LISTA DE SERVERS */
-.wrapper_ef3116,
-.itemsContainer_ef3116,
-.scroller_ef3116,
-.listItem__650eb,
-.wrapper__48112,
-.pill_e5445c,
-.wrapper__58105,
-.item__58105,
-.pill__5bc7e,
-.tutorialContainer__1f388,
-.listItem-GuPuDH,
-.wrapper-21YSNc,
-.folderGroup__48112,
-.folderGuildsList__48112,
-.expandedFolderBackground__48112,
-.folderGroupBackground__48112,
-.stack_dbd263,
-.unreadMentionsIndicatorTop_ef3116,
-
-/* MENSAJES Y CHATS */
-.messageGroupWrapper_f75fb0,
-.message__5e434,
-.cozy_f75fb0,
-.compact_f75fb0,
-.messageContent_a7e664,
-.markup_a7e664,
-.embedWrapper_f75fb0,
-.embed_f75fb0,
-.embedContent_f75fb0,
-.embedTitle_f75fb0,
-.embedDescription_f75fb0,
-.embedFields_f75fb0,
-.embedField_f75fb0,
-.embedAuthor_f75fb0,
-.embedFooter_f75fb0,
-.attachment_f75fb0,
-.audioAttachment_f75fb0,
-.videoAttachment_f75fb0,
-.imageAttachment_f75fb0,
-.reactions_f75fb0,
-.reaction_f75fb0,
-.reactionInner_f75fb0,
-
-/* CANALES */
-.channel_c8ffbb,
-.content_c8ffbb,
-.name_c8ffbb,
-.icon_c8ffbb,
-.wrapper_c8ffbb,
-
-/* POPUPS Y MENÚS */
-.menu__5e434,
-.menuItem__5e434,
-.contextMenu__5e434,
-.container_faa96b,
-.modal__5e434,
-.modalContent__5e434,
-.modalHeader__5e434,
-.modalFooter__5e434,
-
-/* SCROLLBARS */
-.scrollerBase__99e7c,
-.scrollerWrap__99e7c,
-.scrollerContent__99e7c,
-.track__99e7c,
-.thumb__99e7c {
-    background: transparent !important;
+/* Icono personalizado de amigos */
+.listItemWrapper__91816 .wrapper_cc5dd2 .wrapper__6e9f8 .childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 {
+  background-image: var(--home-icon-image);
+  background-size: var(--home-icon-image-zoom);
+  background-position: var(--home-icon-image-position);
+  background-repeat: no-repeat
 }
 
-/* ICONO PERSONALIZADO */
-.listItemWrapper__91816 .childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 {
-    background: var(--home-icon-image) var(--home-icon-image-position) / var(--home-icon-image-zoom) no-repeat !important;
+.wrapper__6e9f8 .childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 svg { 
+  display: none 
 }
 
-/* OCULTAR EL SVG ORIGINAL DEL ICONO */
-.childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 svg {
-    display: none !important;
+/* Transparencias y desenfoques generales */
+.bg__960e4 { 
+  background: var(--theme-transparency); 
 }
 
-/* MEJORA DE RENDIMIENTO (OPCIONAL) */
-/*
-* {
-    animation: none !important;
-    transition: none !important;
-    backdrop-filter: none !important;
+.panels__5e434 { 
+  background: var(--message-box-transparency); 
+  backdrop-filter: blur(5px) 
 }
-*/
+
+.channelTextArea_f75fb0 { 
+  background: var(--message-box-transparency) 
+}
+
+.searchBar__5ec2f {
+  background-color: initial;
+  backdrop-filter: blur(5px)
+}
+
+.itemCard__7e549.wrapper__00943.outer_bf1984.padded_bf1984.interactive_bf1984 {
+  background-color: initial;
+  backdrop-filter: blur(5px)
+}
+
+.embedFull__623de {
+  background-color: var(--embed-background-transparency) !important;
+  backdrop-filter: blur(5px)
+}
+
+.footer__4d95d {
+  background: var(--embed-background-transparency);
+  backdrop-filter: blur(5px)
+}
+
+.textContainer__4d95d {
+  background-color: var(--embed-background-transparency);
+  backdrop-filter: blur(15px) !important
+}
+
+.container__0f2e8 {
+  background-color: var(--context-menu-transparency) !important;
+  backdrop-filter: blur(5px)
+}
+
+.container__01ae2 {
+  background: var(--theme-transparency);
+  backdrop-filter: blur(5px)
+}
+
+.mainCard_f369db {
+  background: var(--theme-transparency);
+  backdrop-filter: blur(5px)
+}
+
+.container_faa96b:hover {
+  background: var(--theme-transparency);
+  backdrop-filter: blur(15px)
+}
+
+/* Transparencias para popouts de usuario */
+.smallPopout__3206b {
+  background-image: var(--theme-background-image);
+  background-color: var(--small-user-popout-background-transparency);
+  background-position: center;
+}
+
+.bigPopout__3206b {
+  background-image: var(--theme-background-image);
+  background-color: var(--big-user-popout-background-transparency);
+  background-position: center;
+}
+
+/* Transparencias para código y menús */
+.codeView__4d95d { 
+  background-color: var(--code-markup-background-color) 
+}
+
+.emojiPicker__3206b {
+  background-color: var(--emoji-menu-background-color);
+}
+
+.messageSearch__3206b {
+  background-color: var(--message-search-menu-background-color);
+}
+
+.messageSearchResults__3206b {
+  background-color: var(--message-search-container-background-color);
+}
+
+/* Iconos de añadir servidor/descubrir */
+.addServer__3206b, .discover__3206b {
+  background-color: var(--add-discover-icon-transparency);
+}
+
+/* Asegurar que los temas oscuro/claro sean transparentes */
+.theme-dark, .theme-light {
+  background: transparent !important;
+}
+
+/* Eliminar animaciones rainbow y otros efectos */
+@keyframes rainbow {
+  /* Eliminado */
+}
+
+.pill_e5445c .item__58105:not([style*="height: 8px"]) {
+  border-color: transparent;
+  background-color: initial;
+}
+
+/* Mantener estructura básica pero sin animaciones */
+.pill_e5445c { 
+  width: 100% !important 
+}
+
+.wrapper__58105 { 
+  overflow: visible !important 
+}
+
+.item__58105 {
+  animation: none;
+  border: 2px solid transparent;
+  background: 0 0;
+  display: block;
+  border-radius: 30% !important;
+  position: absolute;
+  transform: none !important;
+  inset: 0 !important;
+  top: -2px !important;
+  left: 2px !important;
+  width: 100%;
+  height: 100% !important
+}
