@@ -1,29 +1,31 @@
-/* ============================================
-   DISCORD THEME - VERSIÓN OPTIMIZADA
-   Archivo principal que contiene el CSS real
-   ============================================ */
-
-/* 1. FONDO DE DISCORD */
+/* FONDO DE DISCORD */
 .appMount__51fd7 {
-    background-image: var(--theme-background-image) !important;
-    background-size: cover !important;
-    background-position: center !important;
+    background: var(--theme-background-image) center/cover fixed !important;
 }
 
-/* 2. ICONO PERSONALIZADO */
-.listItemWrapper__91816 .wrapper_cc5dd2 .wrapper__6e9f8 .childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 {
-    background-image: var(--home-icon-image) !important;
-    background-size: var(--home-icon-image-zoom) !important;
-    background-position: var(--home-icon-image-position) !important;
-    background-repeat: no-repeat !important;
+/* ELEMENTOS TRANSPARENTES PARA VER EL FONDO */
+.app__160d8,
+.bg__960e4, 
+.chat_f75fb0,
+.container__2637a,
+.panels__5e434,
+.sidebar_c48ade:after,
+.standardSidebarView__23e6b,
+.theme-dark .container__2637a {
+    background: transparent !important;
 }
 
-/* 3. OCULTAR EL SVG ORIGINAL DEL ICONO */
-.wrapper__6e9f8 .childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 svg {
+/* ICONO PERSONALIZADO */
+.listItemWrapper__91816 .childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 {
+    background: var(--home-icon-image) var(--home-icon-image-position) / var(--home-icon-image-zoom) no-repeat !important;
+}
+
+/* OCULTAR EL SVG ORIGINAL DEL ICONO */
+.childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 svg {
     display: none !important;
 }
 
-/* 4. MEJORA DE RENDIMIENTO (OPCIONAL - si aún hay problemas) */
+/* MEJORA DE RENDIMIENTO (OPCIONAL - DESCOMENTAR SI HAY PROBLEMAS) */
 /*
 * {
     animation: none !important;
