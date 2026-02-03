@@ -66,6 +66,11 @@
     --reaction-emoji-hover-border-color: rgba(255, 255, 255, 0.2)
 }
 
+[class*="unread"] {
+    animation: none !important;
+    -webkit-animation: none !important;
+}
+
 .listItemWrapper__91816 .childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 {
     background: var(--home-icon-image) var(--home-icon-image-position) / var(--home-icon-image-zoom) no-repeat !important;
 }
